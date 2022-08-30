@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="" type="text/css">
+  <script type="text/javascript" src=""></script>
+</head>
+<body>
+
+<p id="JS">JavaScript</p>
+<div id="list">
+  <p id="SE">JaveSE</p>
+  <p id="EE">JaveEE</p>
+  <p id="ME">JaveME</p>
+</div>
+
+<script>
+  var ee = document.getElementById('EE');
+  var js = document.getElementById('JS');
+  var list = document.getElementById('list');
+
+  list.insertBefore(js,ee);
+
+  // list.append(js);//追加到后面
+//
+//   var newP = document.createElement('p');
+//   // newP.id = 'newP';
+//   newP.setAttribute('id','newP');
+//   newP.innerText = 'hello Come on';
+//
+//   list.append(newP);
+//
+// //  创建一个新的标签节点
+//   var myScirpt = document.createElement('script');
+//   myScirpt.setAttribute('type','text/javascript');
+//
+//   var myStyle = document.createElement('style');
+//   myStyle.setAttribute('type','text/css');
+//   myStyle.innerHTML = 'body{background:wheat;}';
+//
+//   document.getElementsByTagName('head')[0].appendChild(myStyle);
+
+
+
+
+</script>
+
+</body>
+</html>

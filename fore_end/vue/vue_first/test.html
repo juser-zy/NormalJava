@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学生成绩管理系统</title>
+    <!--引入vue相应文件-->
+    <script src="plugins/elementui/vue.js"></script>
+    <!-- 引入ElementUI样式 -->
+    <link rel="stylesheet" href="plugins/elementui/lib/theme-chalk/index.css">
+    <!-- 引入ElementUI组件库 -->
+    <script src="plugins/elementui/lib/index.js"></script>
+
+
+</head>
+<body>
+<div id="app">
+    <el-tag>标签一</el-tag>
+    <el-tag type="success">标签二</el-tag>
+    <el-tag type="info">标签三</el-tag>
+    <el-tag type="warning">标签四</el-tag>
+    <el-tag type="danger">标签五</el-tag>
+    <el-row :gutter="20">
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+        <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+      
+</div>
+</body>
+<script>
+    new Vue({
+        el:'#app'
+    });
+</script>
+<style>
+    .el-row {
+      margin-bottom: 20px;
+    }
+    .el-col {
+      border-radius: 4px;
+    }
+    .bg-purple-dark {
+      background: #99a9bf;
+    }
+    .bg-purple {
+      background: #d3dce6;
+    }
+    .bg-purple-light {
+      background: #e5e9f2;
+    }
+    .grid-content {
+      border-radius: 4px;
+      min-height: 36px;
+    }
+    .row-bg {
+      padding: 10px 0;
+      background-color: #f9fafc;
+    }
+  </style>

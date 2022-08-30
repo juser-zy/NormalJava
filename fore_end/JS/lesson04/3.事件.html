@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="../jquery-3.6.0.js"></script>
+  <style>
+    div{
+      width: 500px;
+      height: 500px;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+
+<form action="">
+    <input type="text" name="username">
+</form>
+<!--获取鼠标当前的一个坐标-->
+mouse: <span id="mouseMove"></span>
+<div id="divMove">
+  在这里移动鼠标试一试
+</div>
+
+
+<script>
+  // 网页元素完毕之后响应事件
+  $(document).ready(function (){
+    $('#divMove').mousemove(function (e){
+      $('#mouseMove').text('x:'+e.pageX+'  '+'y:'+e.pageY);
+    })
+  });
+  $(function (){
+     $('input[name=username]').val('hello');
+  });
+  // $(function (){});
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--1.导入vue.js-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>-->
+    <script src="../vue.js"></script>
+</head>
+<body>
+<h1>Java</h1>
+
+<!--View层 模板-->
+<div id="app">
+    <h2>{{message}}</h2>
+    <span v-bind:title="message">
+        鼠标悬停几秒钟查看此处动态绑定的提示信息
+    </span>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: "#app",
+        //Model,数据
+        data: {
+            message: "hello,vue!"
+        }
+    });
+</script>
+</body>
+</html>

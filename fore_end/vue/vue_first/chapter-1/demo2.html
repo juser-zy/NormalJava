@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+<!--  <h1 v-if="ok">Yes</h1>-->
+<!--  <h1 v-else>No</h1>-->
+  <h1 v-if="type==='A'">A</h1>
+  <h1 v-else-if="type==='B'">B</h1>
+  <h1 v-else>others</h1>
+</div>
+
+<script src="../vue.js"></script>
+<script>
+  var vm = new Vue({
+    el: "#app",
+    data: {
+      type: 'A'
+      // ok: true
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <button v-on:click="sayHI()">click me</button>
+</div>
+
+<script src="../vue.js"></script>
+<script>
+  var vm = new Vue({
+    el: "#app",
+    data:{
+      message:"jzy"
+    },
+    methods:{//方法必须定义在vue的method对象中
+      sayHI:function (){
+        alert(this.message);
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

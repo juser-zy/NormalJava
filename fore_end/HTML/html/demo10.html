@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单语法</title>
+</head>
+<body>
+<!--form
+method：规定如何发送表单数据
+action：表示向何处发送表单数据
+-->
+<form method="get" action="demo4.html">
+  <p>名字：<input name="name" type="text" value="jzy" maxlength="8" placeholder="请输入用户名"></input></p>
+  <p>密码：<input name="pass" type="password" value="123456" required></input></p>
+
+  <p>sex:
+    <input type="radio" name="sex" value="male" checked disabled/>男
+    <input type="radio" name="sex" value="female"/>女
+  </p>
+
+  <p>多选框：
+    <input type="checkbox" name="num" value="1"/>1
+    <input type="checkbox" name="num" value="2" checked/>2
+    <input type="checkbox" name="num" value="3"/>3
+  </p>
+
+  <p>button:
+    <input type="button" name="btn1" value="点击变长"/>
+    <input type="image" src="./resources/image/touxiang.jpg">
+  </p>
+  
+  <p>下拉框：
+    <select name="列表名称" id="">
+      <option value="ch">中国</option>
+      <option value="us">美国</option>
+      <option value="eth" selected>瑞士</option>
+    </select>
+  </p>
+
+  <p>反馈：
+    <textarea name="textarea" cols="10" rows="10">文本那日童话</textarea>
+  </p>
+
+<!--文件域-->
+  <p>
+    <input type="file" name="file"/>
+    <input type="button" name="upload" value="上传">
+  </p>
+
+<!--  邮件验证-->
+  <p>邮箱
+    <input type="email" name="email">
+  </p>
+  <p>diy邮箱
+    <input type="text" name="diyemail" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$">
+  </p>
+
+  <p>url
+    <input type="url" name="url">
+  </p>
+
+  <p>number:
+    <input type="number" name="number" max="100" min="0" step="2">
+  </p>
+
+  <p>滑块
+    <input type="range" min="0" max="100">
+  </p>
+
+  <p>search:
+    <input type="search" name="search">
+  </p>
+
+  <p>
+    <label for="mark">你点我试一下</label>
+    <input type="text" id="mark">
+  </p>
+
+  <p>
+    <input type="submit" name="Button" value="提交"/>
+    <input type="reset" name="Reset" value="重置"/>
+  </p>
+
+</form>
+
+
+</body>
+</html>

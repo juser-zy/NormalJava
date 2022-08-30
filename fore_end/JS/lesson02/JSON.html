@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var user = {
+    name:"jzy",
+    sex:"male",
+    age:56,
+    run:function (){
+      console.log(this.name+"run……");
+    }
+  }
+
+  var xiaoming = {
+    name: "xiaoming"
+  }
+
+  xiaoming.__proto__ = user;
+
+  var jsonUser = JSON.stringify(user)
+
+  var obj = JSON.parse(jsonUser)
+</script>
+
+</body>
+</html>

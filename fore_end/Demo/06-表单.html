@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- 
+            表单
+         -->
+    <input type="text"><br>
+    <select name="" id="">
+        <option value="">请选择城市</option>
+        <option value="">上海</option>
+        <option value="">北京</option>
+    </select><br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <hr><br>
+    <!-- 文本框 -->
+    <div class="row">
+        <div class="col-3">
+            <input type="text" class="form-control"><br>
+            <input type="text" class="form-control-lg"><br>
+            <input type="text" class="form-control-sm"><br>
+        </div>
+    </div>
+
+    <hr><br>
+    <!-- 下拉框 -->
+    <div class="row">
+        <div class="col-2">
+            <select name="" id="" class="form-select">
+                <option value="">请选择城市</option>
+                <option value="">上海</option>
+                <option value="">北京</option>
+            </select>
+        </div>
+    </div>
+
+    <hr><br>
+    <!-- 文本域 -->
+    <div class="row">
+        <div class="col-4">
+            <textarea class="form-control"></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Default radio
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Default checked radio
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+          Default checkbox
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+        <label class="form-check-label" for="defaultCheck2">
+          Disabled checkbox
+        </label>
+      </div>
+</body>
+
+</html>
